@@ -10,27 +10,27 @@
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 20px;
         }
         .container {
             display: flex;
+            flex-direction: column;
             width: 100%;
             max-width: 1200px;
+            margin: 0 auto;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             overflow: hidden;
             background-color: white;
+            margin-top:  2em;
+            margin-bottom: 2em;
+            box-sizing: border-box;
         }
         .left-section, .right-section {
             padding: 20px;
         }
         .left-section {
-            width: 35%;
             background-color: #f4f4f4;
-            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -60,11 +60,10 @@
             height: auto;
         }
         .right-section {
-            width: 65%;
+            text-align: center;
         }
         .right-section h2 {
             margin-top: 0;
-            text-align: center;
             font-size: 24px;
             color: #333;
         }
@@ -133,6 +132,53 @@
             width: 24px;
             height: 24px;
         }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+            
+          
+            padding: 1em;
+            
+        }
+            .container {
+                flex-direction: column;
+                
+                padding: 1em;
+                
+            }
+            .left-section {
+                width: 100%;
+                border-bottom: 1px solid #ddd;
+            }
+            .right-section {
+                width: 100%;
+            }
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+           
+
+
+            .left-section, .right-section {
+        padding: 0.5em;
+        box-sizing: border-box;
+    }
+            
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                flex-direction: row;
+            }
+            .left-section {
+                width: 35%;
+                border-right: 1px solid #ddd;
+            }
+            .right-section {
+                width: 65%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -142,33 +188,26 @@
                 <img src="logo-4.svg" alt="Company Logo">
             </div>
             <div class="profile">
-                <img src="Myself.jpg" alt="Owner Profile Picture">
+                <img src="Myself.png" alt="Owner Profile Picture">
                 <h2>SAMI AHMAD</h2>
             </div>
-            
             <p><strong>Company Name:</strong> INDIAN TIGER HEALTH PVT. LTD.</p>
-            <p><strong>Address:</strong> Thyrocare, THIRD FLOOR, 75, Gali Number 1, Govindpuri, New
-                Delhi, South East Delhi, Delhi, 110019</p>
+            <p><strong>Address:</strong> Thyrocare, THIRD FLOOR, 75, Gali Number 1, Govindpuri, New Delhi, South East Delhi, Delhi, 110019</p>
             <p><strong>What We Do:</strong> We are the authorized distributor of Dr. Berg Nutritionals® in India, offering high-quality supplements and health products.</p>
             <p><strong>Contact</strong></p>
             <p>Email: <a href="mailto:support@drberg.in">support@drberg.in</a></p>
             <p>Phone: +91 9717779338</p>
             <h3>Follow Us:</h3>
             <div class="social-links">
-	
-
                 <a href="https://www.facebook.com/profile.php?id=61568736372397" target="_blank" title="Facebook">
                     <img src="face.png" alt="Facebook">
                 </a>
                 <a href="https://x.com/Dr_berg_India" target="_blank" title="Twitter">
                     <img src="twit.png" alt="Twitter">
                 </a>
-               
                 <a href="https://www.instagram.com/dr_berg_india/" target="_blank" title="Instagram">
                     <img src="insta.png" alt="Instagram">
                 </a>
-           
-        
             </div>
         </div>
 
