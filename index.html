@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+        }
+        .left-section, .right-section {
+            padding: 20px;
+        }
+        .left-section {
+            width: 35%;
+            background-color: #f4f4f4;
+            border-right: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .profile h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 80%;
+            height: auto;
+        }
+        .right-section {
+            width: 65%;
+        }
+        .right-section h2 {
+            margin-top: 0;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .product-item {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 5px 5px 0 0;
+        }
+        .product-item p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+        .more-products {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .more-products a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        .social-links a {
+            background: #ffffff;
+            border: 2px solid #2575fc;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            color: #2575fc;
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            background: #2575fc;
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+        .social-links a img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="logo">
+                <img src="logo-4.svg" alt="Company Logo">
+            </div>
+            <div class="profile">
+                <img src="Myself.jpg" alt="Owner Profile Picture">
+                <h2>SAMI AHMAD</h2>
+            </div>
+            
+            <p><strong>Company Name:</strong> INDIAN TIGER HEALTH PVT. LTD.</p>
+            <p><strong>Address:</strong> Thyrocare, THIRD FLOOR, 75, Gali Number 1, Govindpuri, New
+                Delhi, South East Delhi, Delhi, 110019</p>
+            <p><strong>What We Do:</strong> We are the authorized distributor of Dr. Berg Nutritionals® in India, offering high-quality supplements and health products.</p>
+            <p><strong>Contact</strong></p>
+            <p>Email: <a href="mailto:support@drberg.in">support@drberg.in</a></p>
+            <p>Phone: +91 9717779338</p>
+            <h3>Follow Us:</h3>
+            <div class="social-links">
+	
+
+                <a href="https://www.facebook.com/profile.php?id=61568736372397" target="_blank" title="Facebook">
+                    <img src="face.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/Dr_berg_India" target="_blank" title="Twitter">
+                    <img src="twit.png" alt="Twitter">
+                </a>
+               
+                <a href="https://www.instagram.com/dr_berg_india/" target="_blank" title="Instagram">
+                    <img src="insta.png" alt="Instagram">
+                </a>
+           
+        
+            </div>
+        </div>
+
+        <div class="right-section">
+            <h2>Our Best Sellers</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="d3k21000.webp" alt="Product 1">
+                    <p>D3 & K2 Vitamin 10,000 IU</p>
+                </div>
+                <div class="product-item">
+                    <img src="trace-minerals.jpg" alt="Product 2">
+                    <p>Trace Minerals Enhanced</p>
+                </div>
+                <div class="product-item">
+                    <img src="adernal.jpg" alt="Product 3">
+                    <p>Adrenal & Cortisol Support</p>
+                </div>
+                <div class="product-item">
+                    <img src="gallbladder-formula.jpg" alt="Product 4">
+                    <p>Gallbladder Formula </p>
+                </div>
+                <div class="product-item">
+                    <img src="e-100-raspberry-lemon-natural-flavor.jpg" alt="Product 5">
+                    <p>Electrolyte Powder Raspberry & Lemon</p>
+                </div>
+                <div class="product-item">
+                    <img src="electrolyte-cherry-pomegranate.jpg" alt="Product 6">
+                    <p>Electrolyte Powder Pomegranate & Cherry</p>
+                </div>
+                <div class="product-item">
+                    <img src="magnesium-glycinate-removebg-preview.png" alt="Product 7">
+                    <p>Magnesium Glycinate</p>
+                </div>
+                <div class="product-item">
+                    <img src="organic-greens-superfood.jpg" alt="Product 8">
+                    <p>Organic Greens Superfood</p>
+                </div>
+                <div class="product-item">
+                    <img src="tudca-removebg-preview.png" alt="Product 9">
+                    <p>TUDCA</p>
+                </div>
+                <div class="product-item">
+                    <img src="raw-wheatgrass-juice-powder-lemon-flavor.jpg" alt="Product 10">
+                    <p>Raw Wheatgrass Juice Powder</p>
+                </div>
+                <div class="product-item">
+                    <img src="vitamin-d3-k2-with-zinc-mct-oil.jpg" alt="Product 11">
+                    <p>Vitamin D3 & K2 with Zinc & MCT Oil</p>
+                </div>
+                <div class="product-item">
+                    <img src="advanced-immune-support-with-elderberry-1000-mg.png" alt="Product 12">
+                    <p>Advanced Immune Support with Elderberry</p>
+                </div>
+            </div>
+            <div class="more-products">
+                <a href="https://drberg.in/" target="_blank">More Products</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
